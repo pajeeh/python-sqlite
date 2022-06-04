@@ -300,8 +300,9 @@ class ClientesDb(object):
                 print("Dados atualizados com sucesso.")
             else:
                 print('Não existe cliente com o id informado.')
-        except e:
-            raise e
+        except :
+            print("An exception occurred") 
+            
 
     ''' DELETE '''
 
@@ -319,8 +320,8 @@ class ClientesDb(object):
                 print("Registro %d excluído com sucesso." % id)
             else:
                 print('Não existe cliente com o código informado.')
-        except e:
-            raise e
+        except:
+            print("An exception occurred")
 
     ''' Adicionando uma nova coluna '''
 
